@@ -1,0 +1,213 @@
+/*  1.1 Базовая стилизация всей страницы */
+
+html {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: #d42819;
+}
+
+*,
+*::before,
+*::after {
+	-webkit-box-sizing: inherit;
+	box-sizing: inherit;
+}
+
+body {
+	max-width: 1500px;
+	margin: 0 auto;
+	background-color: #fdfcfb;
+	background-image: url(../img/background.png);
+	background-repeat: repeat-y;
+	background-position: top center;
+	font-family: "Calibri", "Arial", sans-serif;
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: 400;
+	color: #585857;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+	position: absolute;
+	
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	-webkit-clip-path: inset(100%);
+	clip-path: inset(100%);
+	clip: rect(0, 0, 0, 0);
+	overflow: hidden;
+}
+
+.main-header {
+	background: #fefefe;
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.19);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.19);
+}
+.main-navigation a {
+	font-size: 18px;
+	line-height: 24px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #8d8c8c;
+}
+.main-navigation a:hover,
+.main-navigation a:focus {
+	color: #d42819;
+}
+.main-navigation a:active {
+	color: #000000;
+}
+
+.site-navigation-current a,
+.site-navigation-current a:hover,
+.site-navigation-current a:focus,
+.site-navigation-current a:active {
+	color: #d42819;
+}
+.greeting {
+	font-size: 33px;
+	line-height: 39px;
+	color: #7e7e7e;
+}
+.title {
+	color: #d42819;
+	font-weight: 400;
+}
+.categories-list a {
+	font-size: 14px;
+	line-height: 20px;
+	color: #9b9b9b;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.categories-list a:hover,
+.categories-list a:focus {
+	color: #d42819;
+}
+.categories-list a:active {
+	color: #000000;
+}
+.category-current a,
+.category-current a:hover,
+.category-current a:focus,
+.category-current a:active {
+	color: #d42819;
+}
+.item-title {
+	font-size: 16px;
+	line-height: 48px;
+	color: #4f4e4e;
+}
+.item-category {
+	color: #868585;
+}
+.item-image img {
+	width: 218px;
+	height: 173px;
+	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.23);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.23);
+	background-color: #fefefe;
+}
+.pagination-list a {
+	font-family: "Arial", sans-serif;
+	line-height: 24px;
+	color: #b5b3b3;
+	text-decoration: none;
+}
+.pagination-list a:hover,
+.pagination-list a:focus {
+	color: #d42819;
+}
+.pagination-list a:active {
+	color: #000000;
+}
+.current-page a,
+.current-page a:hover,
+.current-page a:focus,
+.current-page a:active {
+	color: #d42819;
+}
+.footer-search h2,
+.footer-info h2,
+.footer-tags h2 {
+	color: #494848;
+	font-size: 16px;
+	line-height: 22px;
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.19);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.19);
+	background-color: #ffffff;
+}
+.search-intro {
+	color: #666666;
+}
+.search-form input {
+	background-color: #241103;
+	border: none;
+	background-color: rgba(62, 60, 61, 0.12);
+	-webkit-box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.25), inset 1px 1px 1px rgba(0, 0, 0, 0.6);
+	box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.25), inset 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+.search-form input::-webkit-input-placeholder {
+	color: #d42819;
+	font-size: 14px;
+	letter-spacing: 0.1px;
+	font-style: italic;
+}
+.search-form input:-ms-input-placeholder {
+	color: #d42819;
+	font-size: 14px;
+	letter-spacing: 0.1px;
+	font-style: italic;
+}
+.search-form input::placeholder {
+	color: #d42819;
+	font-size: 14px;
+	line-height: 18px;
+	letter-spacing: 0.1px;
+	font-style: italic;
+}
+.search-button {
+	border: none;
+	background-color: #241103;
+	background-color: rgba(62, 60, 61, 0.12);
+	-webkit-box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.25), inset 1px 1px 1px rgba(0, 0, 0, 0.6);
+	box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.25), inset 1px 1px 1px rgba(0, 0, 0, 0.6);
+	color: #d42819;
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+.tags-list a {
+	text-decoration: none;
+	font-style: italic;
+	letter-spacing: 0.1px;
+	color: #666666;
+}
+.tags-list a:hover,
+.tags-list a:focus {
+	color: #d42819;
+}
+.tags-list a:active {
+	color: #000000;
+}
+.footer-copyright p {
+	color: #666665;
+}
+.footer-copyright a {
+	color: #666665;
+	text-decoration: none;
+}
+.footer-copyright a:hover,
+.footer-copyright a:focus {
+	color: #d42819;
+}
+.footer-copyright a:active {
+	color: #000000;
+}
