@@ -1,4 +1,4 @@
-/*  1.1 Базовая стилизация всей страницы */
+/*  1 Базовая стилизация */
 
 html {
 	-webkit-box-sizing: border-box;
@@ -14,6 +14,7 @@ html {
 }
 
 body {
+	min-width: 1000px;
 	max-width: 1500px;
 	margin: 0 auto;
 	background-color: #fdfcfb;
@@ -74,6 +75,7 @@ input[type="radio"].visually-hidden {
 	font-size: 33px;
 	line-height: 39px;
 	color: #7e7e7e;
+	text-align: center;
 }
 .title {
 	color: #d42819;
@@ -136,6 +138,7 @@ input[type="radio"].visually-hidden {
 .footer-search h2,
 .footer-info h2,
 .footer-tags h2 {
+	text-align: center;
 	color: #494848;
 	font-size: 16px;
 	line-height: 22px;
@@ -211,3 +214,81 @@ input[type="radio"].visually-hidden {
 .footer-copyright a:active {
 	color: #000000;
 }
+
+/*  2 Сетка */
+
+body {
+	padding-top: 105px;
+}
+.container {
+	outline: 1px solid blue;
+	width: 960px;
+	margin: 0 auto;
+}
+.main-header {
+	margin-bottom: 100px;
+}
+.header-navigation {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header-logo {
+	outline: 1px solid green;
+}
+.main-navigation {
+	outline: 1px solid green;
+}
+.header-social {
+	outline: 1px solid green;
+}
+.intro {
+	margin-bottom: 100px;
+}
+.greeting {
+	padding-left: 55px;
+	padding-right: 55px;
+	outline: 1px solid green;
+}
+.catalog {
+	outline: 1px solid red;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 100px;
+}
+.categories-list {
+	outline: 1px solid green;
+}
+.catalog-list {
+	outline: 1px solid green;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.pagination {
+	outline: 1px solid green;
+}
+.main-footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.footer-search {
+	outline: 1px solid green;
+	width: 270px;
+}
+.footer-info {
+	outline: 1px solid green;
+	width: 270px;
+}
+.footer-tags {
+	outline: 1px solid green;
+	width: 270px;
+}
+.footer-copyright {
+	outline: 1px solid green;
+	width: 100%;
+	text-align: right;
+}
+
